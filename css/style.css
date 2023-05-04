@@ -1,11 +1,10 @@
-:root {
-  --accent-color: #ffffff;
-}
+/* ==========================  COMPONENTS  ========================== */
 
 :root {
+  --accent-color: #ffffff;
   --color-contact: #434455;
   --bckg-color-main: #2e2f42;
-  --bckg-color-btn-portfolio:#F4F4FD;
+  --bckg-color-btn-portfolio: #f4f4fd;
 }
 
 body {
@@ -26,13 +25,61 @@ button {
   cursor: pointer;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ==========================  /COMPONENTS  ========================== */
+
+/* ==========================  HEADER  ========================== */
+.page-header {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 76px;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
@@ -43,24 +90,19 @@ button {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
-  display: flex;
-  align-items: center;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
 }
 
-.logo-studio-footer{
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.16;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #f4f4fd;
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
 }
+
 .nav-link {
   font-weight: 500;
   font-size: 16px;
@@ -76,6 +118,7 @@ button {
 
 .top-contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contact-link {
@@ -93,7 +136,19 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  display: flex;
+  align-items: center;
 }
+
+.contact-item-post {
+  margin-right: 40px;
+}
+
+/* ==========================  /HEADER  ========================== */
+
+/* ==========================  MAIN  ========================== */
+
+/* ==========================  MAIN HEADER  ========================== */
 
 .main-haeder-block {
   background-color: var(--bckg-color-main);
@@ -103,7 +158,18 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 192px;
+  
 }
+
+ .main-haeder-container {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 116px;
+  
+} 
 
 .main-header {
   font-weight: 700;
@@ -112,6 +178,7 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  
 }
 
 .order-btn {
@@ -119,18 +186,33 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
+  margin-top: 48px;
   letter-spacing: 0.04em;
   color: #ffffff;
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  padding: 16px 32px 16px 32px;
+  min-width: 169px;
 }
 
 .order-btn:hover,
 .order-btn:focus {
   background-color: #404bbf;
+}
+
+/* ==========================  /MAIN HEADER  ========================== */
+
+/* ==========================  FEATURES  ========================== */
+.page-features{
+  margin-bottom: 120px;
+}
+.page-features-container{
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+
+ 
 }
 
 .feature-heading {
@@ -149,6 +231,14 @@ button {
   color: #434455;
 }
 
+/* ==========================  /FEATURES  ========================== */
+
+/* ==========================  WHAT ARE YOU WE DOING  ========================== */
+
+.what-are-we-doing{
+  margin-bottom: 120px;
+}
+
 .what-are-we-doing-text {
   font-weight: 700;
   font-size: 36px;
@@ -157,10 +247,35 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
+
+.what-are-we-doing-container{
+  display: flex;
+  align-items:center;
+  column-gap: 24px;
+}
+/* ==========================  /WHAT ARE YOU WE DOING  ========================== */
+
+/* ==========================  OUR TEAM  ========================== */
 
 .our-team {
   background-color: #f4f4fd;
+  margin-bottom: 120px;
+  height: 732px;
+}
+.our-team-flex-container{
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+.our-team-container{
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  flex-basis: calc((100% - 72)/4);
+  
 }
 
 .our-team-heading {
@@ -171,10 +286,12 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--bckg-color-main);
+  margin-top: 120px;
+  margin-bottom: 72px;
 }
 
-.our-team-item{
-    background-color:#FFFFFF ;
+.our-team-item {
+  background-color: #ffffff;
 }
 
 .worker-name {
@@ -195,8 +312,24 @@ button {
   color: #434455;
 }
 
-.footer-main-studio{
-    background-color:var(--bckg-color-main);
+/* ==========================  /OUR TEAM  ========================== */
+
+/* ==========================  /MAIN  ========================== */
+
+/* ==========================  FOOTER  ========================== */
+
+.footer-main-studio {
+  background-color: var(--bckg-color-main);
+
+}
+
+.footer-main-studio-container{
+  display: flex;
+  
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
 }
 
 .footer-text {
@@ -205,22 +338,48 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   /* color: #F4F4FD; */
+  width: 264px;
 }
+
+.logo-studio-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
+}
+
+/* ==========================  /FOOTER  ========================== */
 
 /* ################################# Portfolio ########################################### */
 
+/* ==========================  PROJECT CARD  ========================== */
+
+/* ==========================  FILTER LIST  ========================== */
+
+.filter-list-container{
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  justify-content:center;
+}
+
 .filter-btn {
-  background-color:var(--bckg-color-btn-portfolio) ;
+  background-color: var(--bckg-color-btn-portfolio);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
+  border: 1px solid #E7E9FC;
+  border-radius: 4px;
   text-align: center;
   letter-spacing: 0.04em;
   color: #4d5ae5;
-
+  padding: 12px 24px 12px 24px;
+  margin-top: 96px;
+  margin-bottom: 72px;
 }
 
 .filter-btn:hover,
@@ -229,12 +388,17 @@ button {
   color: #ffffff;
 }
 
+/* ==========================  /FILTER LIST  ========================== */
+
+/* ==========================  PROJECT CARD LIST  ========================== */
 .project-card-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--bckg-color-main);
+  margin-bottom: 8px;
+  padding-left: 16px;
 }
 
 .project-card-type {
@@ -243,7 +407,24 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-left: 16px;
+  padding-bottom: 32px;
 }
 
-.row-project-text {
+.project-card-list-container{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 48px;
+flex-basis: calc((100% - 48 )/3);
 }
+
+.card-item-container{
+  padding-top:32px;
+  border: 1px solid #E7E9FC;
+  border-top: none;
+}
+/* ==========================  PROJECT CARD LIST  ========================== */
+
+/* ==========================  /PROJECT CARD  ========================== */
