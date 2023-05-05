@@ -386,10 +386,14 @@ margin-bottom: 16px;
 
 /* ==========================  FILTER LIST  ========================== */
 
+.filter-list{
+  margin-bottom: 72px
+}
+
 .filter-list-container{
   display: flex;
   align-items: center;
-  column-gap: 24px;
+  gap: 24px;
   justify-content:center;
 }
 
@@ -414,11 +418,15 @@ margin-bottom: 16px;
 .filter-btn:focus {
   background-color: #404bbf;
   color: #ffffff;
+  border: 1px solid transparent
 }
 
 /* ==========================  /FILTER LIST  ========================== */
 
 /* ==========================  PROJECT CARD LIST  ========================== */
+.page-project-card{
+  padding: 96px 0 120px;
+}
 .project-card-name {
   font-weight: 500;
   font-size: 20px;
@@ -449,7 +457,7 @@ flex-basis: calc((100% - 48 )/3);
 }
 
 .card-item-container{
-  padding-top:32px;
+  padding: 32px 16px;
   border: 1px solid #E7E9FC;
   border-top: none;
 }
