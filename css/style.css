@@ -168,7 +168,8 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 192px;
+ 
+  padding: 188px 0;
   
 }
 
@@ -188,7 +189,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  
+  max-width: 496px;
 }
 
 .order-btn {
@@ -204,6 +205,8 @@ img {
   border-radius: 4px;
   padding: 16px 32px 16px 32px;
   min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .order-btn:hover,
@@ -215,14 +218,18 @@ img {
 
 /* ==========================  FEATURES  ========================== */
 .page-features{
-  margin-bottom: 120px;
+  padding: 120px 0;
 }
 .page-features-container{
   display: flex;
   align-items: center;
-  column-gap: 24px;
+  gap: 24px;
 
  
+}
+
+.features-item{
+width: calc((100% - 72px) / 4);
 }
 
 .feature-heading {
@@ -231,6 +238,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .feature-description {
@@ -246,7 +254,7 @@ img {
 /* ==========================  WHAT ARE YOU WE DOING  ========================== */
 
 .what-are-we-doing{
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 .what-are-we-doing-text {
@@ -263,7 +271,7 @@ img {
 .what-are-we-doing-container{
   display: flex;
   align-items:center;
-  column-gap: 24px;
+  gap: 24px;
 }
 /* ==========================  /WHAT ARE YOU WE DOING  ========================== */
 
@@ -271,7 +279,7 @@ img {
 
 .our-team {
   background-color: #f4f4fd;
-  margin-bottom: 120px;
+  padding: 120px 0;
   height: 732px;
 }
 .our-team-flex-container{
@@ -283,7 +291,7 @@ flex-direction: column;
 .our-team-container{
   display: flex;
   align-items: center;
-  column-gap: 24px;
+  gap: 24px;
   flex-basis: calc((100% - 72)/4);
   
 }
@@ -300,8 +308,13 @@ flex-direction: column;
   margin-bottom: 72px;
 }
 
+.our-team-item-container{
+  padding: 32px 16px;
+}
+
 .our-team-item {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .worker-name {
@@ -311,6 +324,7 @@ flex-direction: column;
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .employee-position {
@@ -330,15 +344,13 @@ flex-direction: column;
 
 .footer-main-studio {
   background-color: var(--bckg-color-main);
-
+  padding: 100px 0
 }
 
 .footer-main-studio-container{
   display: flex;
   
   flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 100px;
 
 }
 
@@ -349,6 +361,11 @@ flex-direction: column;
   letter-spacing: 0.02em;
   /* color: #F4F4FD; */
   width: 264px;
+}
+
+.logo-footer-container{
+display: inline-block;
+margin-bottom: 16px;
 }
 
 .logo-studio-footer {
